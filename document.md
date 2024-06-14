@@ -92,3 +92,17 @@ for set that for example we are using fa language and our website direction is r
   "dir": "rtl"
 }
 ```
+
+---
+
+### icons in manifest
+
+for add icons
+
+```json
+{
+  "icons": [
+    {} //pwa icons generator
+  ]
+}
+```
