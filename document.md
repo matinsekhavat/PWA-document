@@ -13,3 +13,31 @@ npm i -g http-server
 ```
 
 ---
+
+when you want to connect `manifest.json` to your index.html
+in manifest.json
+
+```json
+{
+  "short_name": "pwa",
+  "name": "pwa-document"
+}
+```
+
+`short name`: when user click to add to home screen for exmaple: the short name is default value of app name
+
+you can write sth like this pattern into this file then for link that to index.html
+we use :
+
+```html
+<link rel="manifest" href="path" />
+```
+
+---
+
+`setup http-server`
+for start http-server:
+
+```bash
+http-server -p 9000
+```
