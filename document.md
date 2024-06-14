@@ -71,3 +71,13 @@ for add color to the top of the mobile nav we set
 
 - so the name key is show when the pwa splash runs.
   splash means: the first time we want to open the app we see sth like loading the name appear there
+
+### start_url
+
+- when user for the first time open the app which page should be shown up into his phone , so for controll this we say :
+
+```json
+{
+  "start_url": "/"
+}
+```
