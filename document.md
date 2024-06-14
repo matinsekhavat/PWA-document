@@ -41,3 +41,19 @@ for start http-server:
 ```bash
 http-server -p 9000
 ```
+
+---
+
+### display in manifest
+
+when user add PWA into his homescreen then when open that app user navigate to browser simulate , but this is not what we want. we want that App open into seperate display that we called `standalone`
+
+```json
+{
+  "short_name": "pwa",
+  "name": "pwa name",
+  "display": "standalone"
+}
+```
+
+this means there isnot any broweser URL at the top of phone or any device .
