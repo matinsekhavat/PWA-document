@@ -66,3 +66,8 @@ for add color to the top of the mobile nav we set
 `theme_color`
 
 ---
+
+### name in manifest
+
+- so the name key is show when the pwa splash runs.
+  splash means: the first time we want to open the app we see sth like loading the name appear there
