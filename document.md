@@ -81,3 +81,14 @@ for add color to the top of the mobile nav we set
   "start_url": "/"
 }
 ```
+
+### lang & dir
+
+for set that for example we are using fa language and our website direction is rtl we just say:
+
+```json
+{
+  "lang": "fa",
+  "dir": "rtl"
+}
+```
