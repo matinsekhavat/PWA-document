@@ -57,3 +57,12 @@ when user add PWA into his homescreen then when open that app user navigate to b
 ```
 
 this means there isnot any broweser URL at the top of phone or any device .
+
+---
+
+### theme_color
+
+for add color to the top of the mobile nav we set
+`theme_color`
+
+---
