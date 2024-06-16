@@ -202,3 +202,11 @@ self.addEventListener("fetch", (e) => {
   console.log(e);
 });
 ```
+
+### loading assets with: resspondWith()
+
+```javascript
+self.addEventListener("fetch", (e) => {
+  e.respondWith(fetch(e.request));
+});
+```
