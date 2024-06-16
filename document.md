@@ -147,3 +147,20 @@ if ("serviceWorker" in navigator) {
 
 // navigator.serviceWorker  this syntax we write in if state return Boolean
 ```
+
+### install event in service worker
+
+in app.js file we just introduce sw.js file into broswer
+but all logic should be handle in sw.js file
+in javascript for point to a self thing we said `this` but here in PWA we have something similar to this we called : `self`
+
+for install service worker in sw.js file we say :
+
+```javascript
+slef.addEventListener("install", () => {
+  console.log("service worker successfuly installed");
+});
+```
+
+in application in service worker tab we can see the output
+in each change in sw.js file we should update service worker and click skipWaiting btn instead each time clicking just click to update on reload checkbox
