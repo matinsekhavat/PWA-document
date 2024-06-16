@@ -176,3 +176,17 @@ but for better user experience developers should be handle this beacuase user ne
 ```javascript
 self.addEventListener("activate", (e) => console.log(e));
 ```
+
+---
+
+### auto update in service worker
+
+for handle this skipWaiting we should do this in `install event`
+
+```javascript
+self.addEventListener("install", (e) => {
+  self.skipWaiting();
+});
+```
+
+here everytime we make change inside sw.js this self.skipWaiting() will be called (not for each reload❌)
