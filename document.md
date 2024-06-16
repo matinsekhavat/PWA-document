@@ -106,3 +106,44 @@ for add icons
   ]
 }
 ```
+
+### manifest in safari
+
+```html
+<link rel="apple-touch-icon" href="path/48*48" size="48*48" />
+<meta rel="apple-mobile-web-app-title" content="appTitle" />
+<!-- standalone -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- theme_color -->
+<meta
+  name="apple-mobile-web-app-status-bar-style"
+  content="black-translucent"
+/>
+```
+
+---
+
+# service worker
+
+- at first we should check that user Browser support service worker or not?
+
+for check is a key inside of object we can say
+
+we make a file named `app.js` and another one `sw.js`
+in app.js we say
+
+---
+
+### activate register
+
+```javascript
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker
+    .register("../sw.js")
+    .then((register) => console.log(register))
+    .catch((err) => console.log(err));
+}
+
+// navigator.serviceWorker  this syntax we write in if state return Boolean
+```
