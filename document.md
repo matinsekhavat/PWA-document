@@ -164,3 +164,15 @@ slef.addEventListener("install", () => {
 
 in application in service worker tab we can see the output
 in each change in sw.js file we should update service worker and click skipWaiting btn instead each time clicking just click to update on reload checkbox
+
+---
+
+### activate event in service worker
+
+in this scenario we wanna talk about
+that install event only happened once but activate event update every time we make change into our files + acctive we can click into ` update on reload`
+but for better user experience developers should be handle this beacuase user need the last version of activate
+
+```javascript
+self.addEventListener("activate", (e) => console.log(e));
+```
