@@ -210,3 +210,13 @@ self.addEventListener("fetch", (e) => {
   e.respondWith(fetch(e.request));
 });
 ```
+
+---
+
+### cache storage
+
+the path is in application / cache storage (tab)
+
+we need a Cache browser API => like match-add-addAll
+
+but how to add assets file into Cache?
