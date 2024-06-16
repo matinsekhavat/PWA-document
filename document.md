@@ -190,3 +190,15 @@ self.addEventListener("install", (e) => {
 ```
 
 here everytime we make change inside sw.js this self.skipWaiting() will be called (not for each reload❌)
+
+### fetch events in service worker
+
+you want to access all assets that we are using in the project like css link & scripts etc.
+
+for sometimes we want to implement offline mode
+
+```javascript
+self.addEventListener("fetch", (e) => {
+  console.log(e);
+});
+```
